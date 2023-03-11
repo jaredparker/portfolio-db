@@ -1,0 +1,16 @@
+{
+  "name": "portfolio-db",
+  "version": "1.0.0",
+  "description": "Mongoose models to hold project configurations and details",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jared Parker",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "mongoose": "^7.0.1",
+    "url-slug": "^3.0.4"
+  }
+}
