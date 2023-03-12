@@ -5,6 +5,8 @@ const urlSlug  = require('url-slug');
 
 const { visibilities } = require('../lib/enums.js');
 
+const serviceSchema = require('./subdocs/service.js');
+
 const projectSchema = new mongoose.Schema({
 
     // Used to access project (e.g new-project)
@@ -41,6 +43,15 @@ const projectSchema = new mongoose.Schema({
         }
 
     },
+
+    // ### PROJECT HOSTING ###
+    // Configuration for hosting the project
+
+    hosting: {
+
+        services: [serviceSchema]
+
+    }
 
 });
 
