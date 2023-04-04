@@ -6,10 +6,15 @@ const environments = require('./environments/index.js');
 
 const serviceSchema = new mongoose.Schema({
 
-    name: {
+    id: {
         type: String,
-        default: '@',
+        default: 'main',
         required: true
+    },
+
+    match: {
+        type: String,
+        default: '@'
     },
 
     source: {
